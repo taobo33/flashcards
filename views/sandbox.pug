@@ -1,0 +1,17 @@
+extends layout.pug
+
+block content
+    section#content
+        if friendNames
+            table(style="width:50%")
+                col(width="100")
+                col(width="100")
+                th Last Name
+                th First Name
+                each name in friendNames
+                    tr
+                        th= name.Last
+                        th= name.First
+
+    p
+        i @Bo and his friends!
